@@ -23,9 +23,6 @@ Route::get('password/reset/{token}', 'Seguridad\ResetPasswordController@showRese
 Route::post('password/reset', 'Seguridad\ResetPasswordController@reset')->name('password.update');
 
 
-
-
-
 Route::group(['middleware' => 'auth'], function () {
     
     Route::get('inicio', 'NoticiaController@index')->name('inicio'); //->middleware('auth') //InicioController@index
