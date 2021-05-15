@@ -1,7 +1,7 @@
 <aside class="main-sidebar {{$aside}} elevation-4">
     <!-- Brand Logo -->
     <a href="{{route('inicio')}}" class="brand-link {{$brand}}">
-      <img src='/storage/empresa/logo/{{$empresa['logo']}}'>
+      <img src="{{asset('/storage/empresa/logo/'.$empresa['logo'])}}">
     </a>
     <!-- Sidebar -->
     <div class="sidebar">

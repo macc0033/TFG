@@ -24,12 +24,12 @@
     </head>
     <body class="hold-transition login-page">
         <video autoplay loop muted class="login-fondo">
-            <source src="/storage/fondo.mp4" type="video/mp4">
+            <source src="{{asset('/Storage/fondo.mp4')}}" type="video/mp4">
         </video>
         <div class="login-box">
             <div class="card">
                 <div class="login-logo pb-2 pt-4">
-                    <a href="/"><img src='/storage/empresa/logo/{{$empresa['logo']}}' width="80%"></a>
+                    <a href="/"><img src='{{asset('/storage/empresa/logo/'.$empresa['logo'])}}' width="80%"></a>
                 </div>
                 <!-- /.login-logo -->
                     

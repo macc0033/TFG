@@ -50,13 +50,13 @@
       
     <li class="nav-item dropdown user-menu">
       <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-        <img src="{{session()->get('imagen_usuario')!==null ? '/storage/personal/foto/'.session()->get('imagen_usuario') : asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="user-image img-circle elevation-2" alt="User Image">
+        <img src="{{session()->get('imagen_usuario')!==null ? asset('/storage/personal/foto/'.session()->get('imagen_usuario')) : asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="user-image img-circle elevation-2" alt="User Image">
         <span class="d-none d-md-inline">Hola, {{session()->get('nombre_usuario') ?? 'Invitado'}}</span>
       </a>
       <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <!-- User image -->
         <li class="user-header bg-primary">
-          <img src="{{session()->get('imagen_usuario')!==null ? '/storage/personal/foto/'.session()->get('imagen_usuario') : asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{session()->get('imagen_usuario')!==null ? asset('/storage/personal/foto/'.session()->get('imagen_usuario')) : asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
 
           <p>
             {{session()->get('nombre_usuario') ?? 'Invitado'}} {{session()->get('apellidos_usuario') ?? ''}}<br><i>{{session()->get('rol_nombre') ?? ''}}</i>

@@ -84,7 +84,13 @@ class TablaMenuSeeder extends Seeder
             'icono' => 'fa-hand-paper',
         ]);
 
-
+        $menu = Menu::create([
+            'menu_id' => 3,
+            'nombre' => 'Permisos - Rol',
+            'url' => 'admin/permiso-rol',
+            'orden' => 7,
+            'icono' => 'fa-ban',
+        ]);
 
         $menu = Menu::create([
             'menu_id' => 3,

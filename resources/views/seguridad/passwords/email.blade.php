@@ -22,7 +22,7 @@
     </head>
     <body class="hold-transition login-page">
         <video autoplay loop muted class="login-fondo">
-            <source src="/Storage/fondo.mp4" type="video/mp4">
+            <source src="{{asset('/Storage/fondo.mp4')}}" type="video/mp4">
         </video>
         <div class="login-box">
             <div class="card">

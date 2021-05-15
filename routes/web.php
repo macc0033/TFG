@@ -117,7 +117,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
     Route::get('menu-rol', 'MenuRolController@index')->name('menu_rol');
     Route::post('menu-rol', 'MenuRolController@guardar')->name('guardar_menu_rol');
 
-
+    /*RUTAS PERMISO_ROL*/
+    Route::get('permiso-rol', 'PermisoRolController@index')->name('permiso_rol');
+    Route::post('permiso-rol', 'PermisoRolController@guardar')->name('guardar_permiso_rol');
 
     /*RUTA GESTOR ARCHIVOS*/
     Route::get('archivos', 'AdminController@archivos')->name('archivos_admin');

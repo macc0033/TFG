@@ -3,13 +3,13 @@
         <label for="{{$nombre}}" class="col-lg-{{$label}} control-label">{{$title ?? ucfirst(str_replace('_',' ',$nombre))}}</label>
         @if (isset($data) && $data->$nombre!='' && strpos(mime_content_type("storage/".$data->$nombre), 'image')!==false)
             <div class="col-lg-1">
-                <a href="/storage/{{$data->$nombre}}" data-toggle="lightbox" data-title="">
-                    <img src="/storage/{{$data->$nombre}}" class="{{isset($imgFormat) ? $imgFormat : ''}} elevation-2" height="40">
+                <a href="{{asset('/storage/'.$data->$nombre)}}" data-toggle="lightbox" data-title="">
+                    <img src="{{asset('/storage/'.$data->$nombre)}}" class="{{isset($imgFormat) ? $imgFormat : ''}} elevation-2" height="40">
                 </a>
             </div>
         @elseif (isset($data) && $data->$nombre!='')
             <div class="col-lg-1">
-                <a href='/storage/{{$data->$nombre}}' target="_blank"><i class="far fa-2x fa-file-pdf"></i></a>
+                <a href='{{asset('/storage/'.$data->$nombre)}}' target="_blank"><i class="far fa-2x fa-file-pdf"></i></a>
             </div>
         @endif
     @endif
@@ -28,13 +28,13 @@
 
     @if (isset($data) && $data->$nombre!='' && strpos(mime_content_type("storage/".$data->$nombre), 'image')!==false)
         <div class="col-lg-1">
-            <a href="/storage/{{$data->$nombre}}" data-toggle="lightbox" data-title="">
-                <img src="/storage/{{$data->$nombre}}" class="{{isset($imgFormat) ? $imgFormat : ''}} elevation-2" height="40">
+            <a href="{{asset('/storage/'.$data->$nombre)}}" data-toggle="lightbox" data-title="">
+                <img src="{{asset('/storage/'.$data->$nombre)}}" class="{{isset($imgFormat) ? $imgFormat : ''}} elevation-2" height="40">
             </a>
         </div>
     @elseif (isset($data) && $data->$nombre!='')
         <div class="col-lg-1">
-            <a href='/storage/{{$data->$nombre}}' target="_blank"><i class="far fa-2x fa-file-pdf"></i></a>
+            <a href='{{asset('/storage/'.$data->$nombre)}}' target="_blank"><i class="far fa-2x fa-file-pdf"></i></a>
         </div>
     @endif
 @endif
