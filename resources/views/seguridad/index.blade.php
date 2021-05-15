@@ -21,6 +21,9 @@
         <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
         <link rel="shortcut icon" type="image/png" href="/storage/Anagrama.png"/>
 
+
+        <!-- PWA --> 
+        @laravelPWA
     </head>
     <body class="hold-transition login-page">
         <video autoplay loop muted class="login-fondo">

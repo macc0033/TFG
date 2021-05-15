@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+
+        
+        <!-- PWA --> 
+        @laravelPWA
+        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>@yield('titulo') | {{$empresa['nombre_comercial']}}</title>
@@ -24,6 +29,8 @@
 
         <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
         <link rel="shortcut icon" type="image/png" href="/storage/Anagrama.png"/>
+
+
 
     </head>
     <body class="hold-transition sidebar-mini"> <!-- layout-navbar-fixed -->
