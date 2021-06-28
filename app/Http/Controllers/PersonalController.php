@@ -112,7 +112,7 @@ class PersonalController extends Controller
         if ($request['email']) {
             $personal->contraseña=$request['password'];
             $personal->email=$request['email'];
-            $personal->notify(new RegistroCuenta($personal));
+           // $personal->notify(new RegistroCuenta($personal));
         }
         
         return redirect('personal')->with('mensaje', 'Ficha Personal creada con exito');
